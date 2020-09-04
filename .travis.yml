@@ -1,0 +1,15 @@
+language: node_js
+
+node_js:
+  - 13            
+  - lts/*
+
+before_install:
+  - yarn add -g codecov
+
+script:
+  - yarn test
+  - codecov
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
