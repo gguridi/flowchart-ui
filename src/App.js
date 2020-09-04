@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import { Provider } from "react-redux";
 import { applyMiddleware, combineReducers, createStore } from "redux";
 import thunk from "redux-thunk";
-import AdminLTE, { Footer } from "adminlte-2-react";
+import { Footer } from "adminlte-2-react";
+import Admin from "./vendor/Admin";
 import chartReducer from "./reducers/charts";
 import Diagram from "./containers/Diagram";
 import NewChart from "./containers/NewChart";
@@ -21,7 +22,7 @@ class App extends Component {
     render() {
         return (
             <Provider store={store}>
-                <AdminLTE
+                <Admin
                     title={["Flow", "Charts"]}
                     titleShort={["Fl", "Ch"]}
                     theme="blue"
@@ -37,7 +38,7 @@ class App extends Component {
                 >
                     <Diagram path="/diagram/:id" />
                     <NewChart path="/new-chart" />
-                </AdminLTE>
+                </Admin>
             </Provider>
         );
     }

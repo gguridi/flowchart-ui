@@ -38,6 +38,9 @@ export default class Diagram extends React.Component {
         if (this.props.code) {
             this.renderDiagram(this.props.code);
         }
+        if (this.props.id) {
+            this.props.selectChart(this.props.id);
+        }
     }
 
     componentDidUpdate(prevProps) {
