@@ -1,8 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import App from './App';
-import AdminLTE from "adminlte-2-react";
-
 
 describe('app', () => {
 
