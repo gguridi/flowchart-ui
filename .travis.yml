@@ -5,7 +5,7 @@ node_js:
   - lts/*
 
 before_install:
-  - yarn add -g codecov
+  - yarn global add codecov
 
 script:
   - yarn test
