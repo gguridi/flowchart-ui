@@ -1,4 +1,4 @@
-import { actionCreate, actionUpdate, actionDelete, updateChart } from '../actions/charts';
+import { actionCreate, actionUpdate, actionDelete, actionSelect } from '../actions/charts';
 import chartsReducer from './charts';
 
 describe('charts reducers', () => {
@@ -76,6 +76,23 @@ describe('charts reducers', () => {
         it('should not raise an error if the chart does not exist', () => {
             newState = chartsReducer(newState, actionDelete("unknown"));
             expect(Object.keys(newState.charts)).toHaveLength(0);
+        });
+    });
+
+    describe('given SELECT_CHART action', () => {
+
+        beforeEach(() => {
+            newState = chartsReducer(state, actionSelect(testId));
+        });
+
+        it('should set the chart selected', () => {
+            expect(newState.selected).toBe(testId);
+        });
+
+        it('should override the previous chart selected', () => {
+            const newTestId = "another-test";
+            newState = chartsReducer(newState, actionSelect(newTestId));
+            expect(newState.selected).toBe(newTestId);
         });
     });
 });

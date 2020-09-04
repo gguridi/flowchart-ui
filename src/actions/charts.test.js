@@ -1,4 +1,4 @@
-import { charts, CREATE_CHART, UPDATE_CHART, DELETE_CHART, createChart, updateChart, deleteChart } from './charts';
+import { charts, CREATE_CHART, UPDATE_CHART, DELETE_CHART, SELECT_CHART, createChart, updateChart, deleteChart, selectChart } from './charts';
 
 describe('charts actions', () => {
     let dispatch;
@@ -77,6 +77,21 @@ describe('charts actions', () => {
 
         it('should return an action with the id given as input', () => {
             expect(dispatch.mock.calls[0][0].id).toEqual(testId);
+        });
+    });
+
+    describe('select', () => {
+
+        beforeEach(async () => {
+            await selectChart(testId)(dispatch);
+        });
+
+        it('should return an action with type SELECT_CHART', () => {
+            expect(dispatch.mock.calls[0][0].type).toBe(SELECT_CHART);
+        });
+
+        it('should return an action with the selected id', () => {
+            expect(dispatch.mock.calls[0][0].id).toBe(testId);
         });
     });
 });

@@ -5,6 +5,7 @@ import Sidebar from "../components/Sidebar";
 
 const mapStateToProps = (state) => {
     return {
+        selected: state.charts.selected,
         charts: state.charts.charts,
     };
 };

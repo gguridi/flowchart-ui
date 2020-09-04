@@ -9,11 +9,14 @@ export default class Diagram extends React.Component {
         id: PropTypes.string.isRequired,
         title: PropTypes.string.isRequired,
         code: PropTypes.string,
+        selectChart: PropTypes.func,
         updateChart: PropTypes.func,
     };
 
     static defaultProps = {
         code: "",
+        selectChart: () => {},
+        updateChart: () => {},
     };
 
     constructor(props) {
@@ -32,8 +35,17 @@ export default class Diagram extends React.Component {
     }
 
     componentDidMount() {
-        if (this.state.code) {
-            this.renderDiagram(this.state.code);
+        if (this.props.code) {
+            this.renderDiagram(this.props.code);
+        }
+    }
+
+    componentDidUpdate(prevProps) {
+        if (this.props.code !== prevProps.code) {
+            this.setState({ code: this.props.code });
+        }
+        if (this.props.id !== prevProps.id) {
+            this.props.selectChart(this.props.id);
         }
     }
 

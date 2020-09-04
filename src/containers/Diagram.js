@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import { updateChart } from "../actions/charts";
+import { selectChart, updateChart } from "../actions/charts";
 import Diagram from "../components/Diagram";
 
 const mapStateToProps = (state, props) => {
@@ -11,6 +11,7 @@ const mapStateToProps = (state, props) => {
 const mapDispatchToProps = (dispatch) => {
     return bindActionCreators(
         {
+            selectChart,
             updateChart,
         },
         dispatch,
