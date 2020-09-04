@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/flowchart-ui/static/css/main.e53928fb.chunk.css",
+    "main.js": "/flowchart-ui/static/js/main.113b19e3.chunk.js",
+    "main.js.map": "/flowchart-ui/static/js/main.113b19e3.chunk.js.map",
+    "runtime-main.js": "/flowchart-ui/static/js/runtime-main.ca231305.js",
+    "runtime-main.js.map": "/flowchart-ui/static/js/runtime-main.ca231305.js.map",
+    "static/css/2.976249a1.chunk.css": "/flowchart-ui/static/css/2.976249a1.chunk.css",
+    "static/js/2.7d82c5d5.chunk.js": "/flowchart-ui/static/js/2.7d82c5d5.chunk.js",
+    "static/js/2.7d82c5d5.chunk.js.map": "/flowchart-ui/static/js/2.7d82c5d5.chunk.js.map",
+    "index.html": "/flowchart-ui/index.html",
+    "precache-manifest.913164fcf250f5b77bc65ecdb6884c90.js": "/flowchart-ui/precache-manifest.913164fcf250f5b77bc65ecdb6884c90.js",
+    "service-worker.js": "/flowchart-ui/service-worker.js",
+    "static/css/2.976249a1.chunk.css.map": "/flowchart-ui/static/css/2.976249a1.chunk.css.map",
+    "static/css/main.e53928fb.chunk.css.map": "/flowchart-ui/static/css/main.e53928fb.chunk.css.map",
+    "static/js/2.7d82c5d5.chunk.js.LICENSE.txt": "/flowchart-ui/static/js/2.7d82c5d5.chunk.js.LICENSE.txt",
+    "static/media/source-sans-pro.css": "/flowchart-ui/static/media/SourceSansPro-SemiboldIt.ttf.60e71696.woff2",
+    "static/media/bootstrap.css": "/flowchart-ui/static/media/glyphicons-halflings-regular.fa277232.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ca231305.js",
+    "static/css/2.976249a1.chunk.css",
+    "static/js/2.7d82c5d5.chunk.js",
+    "static/css/main.e53928fb.chunk.css",
+    "static/js/main.113b19e3.chunk.js"
+  ]
+}
