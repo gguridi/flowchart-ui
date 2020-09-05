@@ -2,7 +2,7 @@ name: Deployment
 on:
   push:
     branches:
-      - feature/deploy-testing
+      - master
 
 jobs:
   deploy:
@@ -19,8 +19,8 @@ jobs:
       run: yarn build --verbose
       env:
         CI: false      
-    # - name: Deploy to gh-pages
-    #   uses: peaceiris/actions-gh-pages@v3
-    #   with:
-    #     deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-    #     publish_dir: ./build
+    - name: Deploy to gh-pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        publish_dir: ./build
