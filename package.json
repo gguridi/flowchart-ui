@@ -1,8 +1,13 @@
 {
     "name": "flowchart-ui",
+    "description": "Flowchart-UI implementation for quick use of the tool",
     "version": "0.1.0",
     "private": true,
     "homepage": "/flowchart-ui",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gguridi/flowchart-ui.git"
+    },
     "dependencies": {
         "@testing-library/jest-dom": "^4.2.4",
         "@testing-library/react": "^9.3.2",
@@ -41,5 +46,9 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
+    },
+    "jest": {
+        "coverageDirectory": "./coverage/",
+        "collectCoverage": true
     }
 }
