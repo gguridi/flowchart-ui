@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c8e67027449b775fbe359afbf70619fa",
+    "revision": "0e87460de1b73749535b52e3dc3bb36e",
     "url": "/flowchart-ui/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/flowchart-ui/static/css/2.3cdba769.chunk.css"
   },
   {
-    "revision": "9c458ebbda5a6dc33cd8",
+    "revision": "0436f98a2447c09bc8ca",
     "url": "/flowchart-ui/static/css/main.e53928fb.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/flowchart-ui/static/js/2.4db16ec3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9c458ebbda5a6dc33cd8",
-    "url": "/flowchart-ui/static/js/main.7240a466.chunk.js"
+    "revision": "0436f98a2447c09bc8ca",
+    "url": "/flowchart-ui/static/js/main.cdd322af.chunk.js"
   },
   {
     "revision": "ace511745591ea856b69",
