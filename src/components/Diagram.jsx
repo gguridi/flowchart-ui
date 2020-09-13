@@ -99,9 +99,7 @@ export default class Diagram extends React.Component {
                 chart.drawSVG("canvas-svg");
                 this.setState({ chart });
             }
-        } catch (e) {
-            console.error(e);
-        }
+        } catch (e) {}
     };
 
     renderMarkdownButtons = () => {
