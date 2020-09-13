@@ -30,7 +30,11 @@ class App extends Component {
                     footer={
                         <Footer>
                             PoweredBy{" "}
-                            <a href="http://flowchart.js.org/" target="_blank">
+                            <a
+                                href="http://flowchart.js.org/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 FlowChart
                             </a>
                         </Footer>

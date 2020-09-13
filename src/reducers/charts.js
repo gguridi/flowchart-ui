@@ -1,8 +1,27 @@
 import store from "store2";
+import raw from "raw.macro";
 import * as ChartActions from "../actions/charts";
 
+const randomExample = () => {
+    const examples = [
+        raw("../examples/simple-flow.txt"),
+        raw("../examples/color-coding.txt"),
+    ];
+    return examples[Math.floor(Math.random() * examples.length)];
+};
+
+const getCharts = () => {
+    const defaultChart = {
+        id: 0,
+        title: "Example Chart",
+        code: randomExample(),
+    };
+    const loaded = charts.getAll();
+    return Object.keys(loaded).length > 0 ? loaded : { 0: defaultChart };
+};
+
 const charts = store.namespace("charts");
-const defaultState = { selected: "", charts: charts.getAll() };
+const defaultState = { selected: "", charts: getCharts() };
 
 const newStateWithChart = (state, chart) => {
     return Object.assign({}, state, {
